@@ -1,0 +1,3 @@
+dist/
+.scss-cache/
+node_modules/
