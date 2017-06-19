@@ -1,5 +1,113 @@
-body {
-  display: flex; }
-  body h1 {
-    background-color: #f33;
-    margin: 0 auto; }
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: gray; }
+
+.kehu:hover {
+  border: .1rem solid gray;
+  background: white; }
+
+html {
+  font-size: 62.5%; }
+  html .wrap {
+    width: 1365px;
+    font-size: 12px;
+    background: #f9f9f9; }
+    html .wrap header {
+      width: 1365px;
+      height: 3rem;
+      background: #f9f9f9;
+      border-bottom: 1px solid gray; }
+      html .wrap header .header {
+        width: 1165px;
+        height: 3rem;
+        margin: 0 auto; }
+        html .wrap header .header div {
+          float: left;
+          height: 3rem;
+          line-height: 3rem; }
+          html .wrap header .header div span {
+            margin: 0 5px; }
+        html .wrap header .header ul {
+          float: right;
+          height: 3rem;
+          list-style: none;
+          -webkit-box-sizing: border-box; }
+          html .wrap header .header ul li {
+            height: 3rem;
+            float: left;
+            line-height: 3rem;
+            padding: 0 6px;
+            box-sizing: border-box; }
+            html .wrap header .header ul li a:hover {
+              border-bottom: 1px solid gray; }
+    html .wrap .logos {
+      width: 1165px;
+      height: 6rem;
+      margin: 0 auto;
+      background: white; }
+      html .wrap .logos div {
+        width: 230px;
+        height: 6rem;
+        float: left; }
+        html .wrap .logos div img {
+          width: 230px;
+          height: 6rem; }
+      html .wrap .logos ul {
+        height: 6rem;
+        float: right; }
+        html .wrap .logos ul li {
+          float: left;
+          font-size: 16px;
+          padding: 10px 10px;
+          margin: 1.5rem; }
+        html .wrap .logos ul li:hover {
+          background: #f9f9f9; }
+    html .wrap #myCarousel {
+      width: 1165px;
+      margin: 0 auto;
+      position: relative;
+      top: -13px; }
+      html .wrap #myCarousel #xiushouji {
+        width: 260px;
+        position: absolute;
+        left: 0;
+        top: 20px; }
+        html .wrap #myCarousel #xiushouji div {
+          width: 260px;
+          height: 6.9rem;
+          background: rgba(0, 0, 0, 0.8);
+          font-size: 1.7rem;
+          color: white;
+          padding: 2px 0 2px 20px; }
+          html .wrap #myCarousel #xiushouji div img {
+            margin-left: 10px; }
+          html .wrap #myCarousel #xiushouji div span {
+            margin-left: 28px; }
+        html .wrap #myCarousel #xiushouji div:hover {
+          background: green; }
+    html .wrap .situ {
+      width: 1165px;
+      height: 166px;
+      margin: 0 auto; }
+      html .wrap .situ img {
+        width: 291px;
+        float: left; }
+    html .wrap p {
+      width: 1165px;
+      height: 2rem;
+      margin: 0 auto;
+      background: red; }
+      html .wrap p h1 {
+        width: 100px;
+        height: 2rem;
+        float: left;
+        background: blue; }
+      html .wrap p span {
+        float: right; }

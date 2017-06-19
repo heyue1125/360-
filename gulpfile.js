@@ -1,8 +1,7 @@
-
 var gulp = require("gulp");//gulp基础库
 
 var browserSync = require('browser-sync').create();//gulp服务器
-// var reload = browserSync.reload;
+var reload = browserSync.reload;
 // 创建一个静态的服务器
 gulp.task('browser-sync',function() {
     browserSync.init({
@@ -22,11 +21,10 @@ gulp.task("scss", function() {
     .pipe(gulp.dest("src/css"))
     //.pipe(cssnano())
     .pipe(gulp.dest("dist/css"))
-    // .pipe(reload({stream:true}));
+    .pipe(reload({stream:true}));
 });
 
-
-// //压缩合并js文件的任务，并放到上线环境中
+ //压缩合并js文件的任务，并放到上线环境中
 var uglify = require("gulp-uglify");
 gulp.task("js", function(){ 
     gulp.src(["src/js/*.js"])
@@ -49,7 +47,7 @@ gulp.task("images", function() {
 });
 
 
-// //发布静态页面到dist目录中
+//发布静态页面到dist目录中
 var htmlmin = require("gulp-htmlmin");
 gulp.task("html", function() {
     gulp.src("src/*.html")
@@ -67,10 +65,10 @@ gulp.task("watch", ["browser-sync", "scss", "js", "images", "html"],function() {
     gulp.watch("src/js/*.js",["js"]);
     gulp.watch('src/images/*.{png,jpg,gif}',["images"]);
     gulp.watch('src/*.html',["html"]);
-    //gulp.watch("src/**/*.+(html|js)");
+    gulp.watch("src/*.+(html|js)");
 });
 
 
 
-    gulp.task("heyue", ["scss", "js", "images", "html", "browser-sync", "watch"]);  
+    gulp.task("default", ["scss", "js", "images", "html", "browser-sync", "watch"]);  
 
